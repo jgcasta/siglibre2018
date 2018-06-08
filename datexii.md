@@ -1,5 +1,12 @@
 # Jornadas de SIG Libre 2018 - Uso de fuentes abiertas de datos de tráfico en DATEX II y seguridad vial
 
+José Gómez Castaño
+@jgcasta
+jgcasta@inspide.com
+
+Juan José Cabrera García
+jjcabrera@inspide.com
+
 * Introducción
 * [INSPIDE](http://www.inspide.com/)
 * Modelos UML y XML
@@ -11,7 +18,7 @@
 
 ## Introducción
 
-* Etherpad compoartido https://oasis.sandstorm.io/grain/DSBS7bJytzoSAioj9EDK6p
+* Etherpad compoartido https://bit.ly/2HuLKZS
 
 * Condolencias a los que tengáis que utilizar este esquema
 * DATEX se concibió como un estandar de intercambio de datos entre organismos de tráfico.
