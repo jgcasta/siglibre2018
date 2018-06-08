@@ -47,7 +47,12 @@ $ xml2json camaras.xml camaras.json
 ![Camaras](mapa.png)
 
 ## Aplicaciones prácticas en Seguridad Vial
+* Integración Comobity
+
 [![Integración Comobity](http://img.youtube.com/vi/AOkOKtZNoHo/0.jpg)](https://www.youtube.com/watch?v=AOkOKtZNoHo "Comobity")
+
+* Integración Auxilio en Carretera
+
 [![Integración Auxilio en Carretera](http://img.youtube.com/vi/O_t6WM5TA8s/0.jpg)](https://www.youtube.com/watch?v=O_t6WM5TA8s "Integración Auxilio en Carretera")
 
 ## Referencias
