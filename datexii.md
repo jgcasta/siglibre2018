@@ -25,6 +25,8 @@
     - Administración de la infraestructura
     - Enlazado de la administración del tráfico con los sistemas de información
 * Responde a un modelo UML establecido
+* En contra: Necesidad de mejorar el modelo para hacerlo más eficiente
+* A favor: Es un estándard y todos hablan el mismo lenguaje
 
 ## Qué es DATEX
 * [Presentación Comisión Europea sobre DATEXII](http://akce.fd.cvut.cz/sites/default/files/datex2/presentations/D2_01b_02_Jorg_Freundenstein_Tour_through_DATEX_Model.pdf)
@@ -56,7 +58,6 @@ $ xml2json camaras.xml camaras.json
 * Ayuda para desarrolladores - http://www.datex2.eu/current-version-supporting
 * Diccionario de datos - http://www.datex2.eu/content/datex-ii-v23-data-dictionary
 * Guia para seguridad vial - http://www.datex2.eu/sites/www.datex2.eu/files/DATEX_II_Guide_for_safety_related_content_in_DATEX_v_2.3.pdf
-* Modelo relacionado con seguridad vial - http://www.datex2.eu/sites/www.datex2.eu/files/DATEX_II_Guide_for_safety_related_content_in_DATEX_v_2.3.pdf
 * DGT3.0 -  http://www.dgt.es/es/el-trafico/dgt-3-0/index.shtml
 
 ## Herramientas
