@@ -51,6 +51,69 @@ jjcabrera@inspide.com
 $ xml2json camaras.xml camaras.json
 
 ```
+```python
+#!/usr/bin/env python
+# -*- coding: utf-8
+
+'''
+    Actualiza la tabla incidgt con las ultimas incidencias publicadas por le DGT en DATEX
+
+   pip install json
+   sudo apt-get install nodejs
+   sudo apt-get install npm
+   sudo apt-get install python-pip
+
+   sudo aptitude install npm
+
+'''
+
+import json
+import sys
+
+reload(sys)
+sys.setdefaultencoding('utf8')
+
+f=open("datos.json","w")
+
+salida = ""
+salida = salida + "["
+
+
+with open('ejemplos/camaras.json') as j:
+    data = json.load(j)
+    fecha_publicacion =  data['_0:d2LogicalModel']['_0:payloadPublication']['_0:publicationTime']
+
+    lista_camaras = data['_0:d2LogicalModel']['_0:payloadPublication']['_0:genericPublicationExtension']['_0:cctvSiteTablePublication']['_0:cctvCameraList']['_0:cctvCameraMetadataRecord']
+
+    for camara in lista_camaras:
+        id = camara['id']
+        version = camara['version']
+        identificacion = camara['_0:cctvCameraIdentification']
+        tipo = camara['_0:cctvCameraType']
+        lat = camara['_0:cctvCameraLocation']['_0:locationForDisplay']['_0:latitude']
+        lon = camara['_0:cctvCameraLocation']['_0:locationForDisplay']['_0:longitude']
+        url = camara['_0:cctvStillImageService']['_0:stillImageUrl']['_0:urlLinkAddress']
+
+        salida = salida + "{"
+        salida = salida + "    \"type\": \"Feature\","
+        salida = salida + "    \"geometry\": {"
+        salida = salida + "        \"type\": \"Point\","
+        salida = salida + "            \"coordinates\": [" + str(lon) + ", " + str(lat) + "]"
+        salida = salida + "        },"
+        salida = salida + "    \"properties\":"
+        salida = salida + "        {"
+        salida = salida + "            \"id\": \"" + str(id) + "\","
+        salida = salida + "            \"identificacion\": \"" + str(identificacion) + "\","
+        salida = salida + "            \"url\": \"" + str(url) + "\""
+        salida = salida + "        }"
+        salida = salida + "},"
+
+salida = salida[0:len(salida)-1]
+
+salida = salida + "]"
+f.write(salida)
+f.close()
+```
 
 * Mostrar la ubicación de las cámaras en Leaflet
 ![Camaras](mapa.png)
