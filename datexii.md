@@ -44,6 +44,9 @@ $ xml2json camaras.xml camaras.json
 * Mostrar la ubicación de las cámaras en Leaflet
 ![Camaras](mapa.png)
 
+## Aplicaciones prácticas en Seguridad Vial
+[Comobity](https://www.youtube.com/watch?v=AOkOKtZNoHo)
+[![Comobity](http://img.youtube.com/vi/AOkOKtZNoHo/0.jpg)](https://www.youtube.com/watch?v=AOkOKtZNoHo "Comobity")
 ## Referencias
 * http://www.datex2.eu/
 * Esquemas y utilidades - http://www.datex2.eu/current-version-reference
