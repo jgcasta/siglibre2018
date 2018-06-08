@@ -1,4 +1,4 @@
-# Taller de DATEX II
+# Jornadas de SIG Libre 2018 - Uso de fuentes abiertas de datos de tráfico en DATEX II y seguridad vial
 
 * Introducción
 * INSPIDE
@@ -30,7 +30,7 @@
 
 ## Parseado
 
-* Obtener los datos de las cámaras de tráfico desde el portal estadístico de DGT
+* Obtener los datos de las cámaras de tráfico desde el portal estadístico de DGT - http://www.dgt.es
 * Parsear los datos a un GeoJSON
 
 ```txt

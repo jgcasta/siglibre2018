@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<title>INSPIDE - Sig Libre 2018</title>
+
+<link rel="stylesheet" href="js/leaflet_1_0_3/leaflet.css" />
+<script src="js/leaflet_1_0_3/leaflet.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+
+
+
+
+<style>
+
+<!--
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body, #map {
+    height: 100%;
+    width: 100%;
+}
+-->
+
+
+</style>
+<style>
+
+
+html, body,#map { width: 100%; height: 100%; margin: 0; padding: 0; }
+.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; }
+.info h3, .info h4 { margin: 0 0 5px; color: #777; }
+.legend { line-height: 18px; color: #555; }
+.legend p { margin: 4px 0; }
+.legend p img { vertical-align: middle; margin-right: 10px; }
+.legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+.info.properties { width: 400px; }
+''
+
+</style>
+</head>
+
+<body>
+
+
+
+<div id="map"><divv id="legend"></div></div>
+<script type='text/javascript'>
+
+
+
+var OpenStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: 'Datos <a href="http://www.inspide.com">INSPIDE</a> &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+});
+
+var map = new L.Map('map', {center: new L.LatLng(40.45, -3.6), zoom: 7, layers: [ OpenStreetMap]});
+
+var baseMaps = {
+    "OSM": OpenStreetMap
+};
+
+
+
+
+var overlayMaps = {
+
+    };
+
+
+var controlLayers = L.control.layers(baseMaps,overlayMaps,{collapsed: false}).addTo(map);
+
+var stylePunto = {
+        radius: 8,
+    fillColor: "#ff7800",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 1
+};
+
+
+var layerCamaras;
+
+$.getJSON('http://desa.inspidesingularity.es/siglibre2018/datos.json', function(dataParadas) {
+
+
+    layerCamaras = L.geoJson(dataParadas, {
+
+
+        pointToLayer: function (featureCamaras, latlng) {
+            console.log(latlng);
+            return L.circleMarker(latlng);
+            },
+        style: function(featureCamaras) {
+            
+            return {radius: 3, fillColor: "#07f79b", color: "#07f79b", weight: 1, opacity: 1,fillOpacity: 0.8};
+               
+        },
+         onEachFeature: function(featureCamaras, layerPuntosTipos) {
+                if (featureCamaras.properties) {
+                    layerPuntosTipos.bindPopup("<b>Datos del punto de Camaras</b><br><b>LineId " + featureCamaras.properties.id + "</b><br /><b>Identificacion " + featureCamaras.properties.identificacion + "</b><br /><b><a href='" + featureCamaras.properties.url + "' target='_blank'>Enlace Imagen</a></b>", {maxHeight: 300});
+                }
+            }                    
+
+    });
+
+    controlLayers.addOverlay(layerCamaras, 'Camaras');
+
+});
+
+
+</script>
+
+
+</body>
+</html>
