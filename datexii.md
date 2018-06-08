@@ -2,7 +2,6 @@
 
 * Introducción
 * INSPIDE
-* Tipos de datos
 * Modelos UML y XML
 * Qué es DATEX
 * Modelo de Datos
@@ -11,7 +10,10 @@
 * Integración de la informacion en un mapa
 
 ## Introducción
-* Siento que tengáis que utilizar este esquema
+
+* Etherpad compoartido https://oasis.sandstorm.io/grain/DSBS7bJytzoSAioj9EDK6p
+
+* condolencias a los que tengáis que utilizar este esquema
 * DATEX se concibió como un estandar de intercambio de datos entre organismos de tráfico.
 * Actualmente se encuentra la especificación DATEXII que es una extensión para permitir el intercambio con organizaciones privadas
 * Es un estandard multiparte, mantenido por el  CEN Technical Committee 278, CEN/TC278, (Road Transport and Traffic Telematics) dividido en 3 partes:
