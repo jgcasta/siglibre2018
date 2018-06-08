@@ -1,7 +1,7 @@
 # Jornadas de SIG Libre 2018 - Uso de fuentes abiertas de datos de tráfico en DATEX II y seguridad vial
 
 * Introducción
-* INSPIDE
+* [INSPIDE](http://www.inspide.com/)
 * Modelos UML y XML
 * Qué es DATEX
 * Modelo de Datos
@@ -13,7 +13,7 @@
 
 * Etherpad compoartido https://oasis.sandstorm.io/grain/DSBS7bJytzoSAioj9EDK6p
 
-* condolencias a los que tengáis que utilizar este esquema
+* Condolencias a los que tengáis que utilizar este esquema
 * DATEX se concibió como un estandar de intercambio de datos entre organismos de tráfico.
 * Actualmente se encuentra la especificación DATEXII que es una extensión para permitir el intercambio con organizaciones privadas
 * Es un estandard multiparte, mantenido por el  CEN Technical Committee 278, CEN/TC278, (Road Transport and Traffic Telematics) dividido en 3 partes:
@@ -27,7 +27,7 @@
 * Responde a un modelo UML establecido
 
 ## Qué es DATEX
-
+* [Presentación Comisión Europea sobre DATEXII](http://akce.fd.cvut.cz/sites/default/files/datex2/presentations/D2_01b_02_Jorg_Freundenstein_Tour_through_DATEX_Model.pdf)
 * Nos damos de alta en el portal http://www.datex2.eu/
 
 ## Práctica
