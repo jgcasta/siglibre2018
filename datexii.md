@@ -37,6 +37,7 @@ jjcabrera@inspide.com
 
 ## Qué es DATEX
 * [Presentación Comisión Europea sobre DATEXII](http://akce.fd.cvut.cz/sites/default/files/datex2/presentations/D2_01b_02_Jorg_Freundenstein_Tour_through_DATEX_Model.pdf)
+* [Guía de DATEXII proporcionada por DGT](http://infocar.dgt.es/datex2/informacion_adicional/Guia%20de%20Utilizacion%20de%20DATEX%20II.pdf)
 * Nos damos de alta en el portal http://www.datex2.eu/
 
 ## Práctica
