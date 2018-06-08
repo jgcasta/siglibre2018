@@ -1,7 +1,7 @@
 # Jornadas de SIG Libre 2018 - Uso de fuentes abiertas de datos de tráfico en DATEX II y seguridad vial
 
 José Gómez Castaño
-@jgcasta
+[@jgcasta](https://twitter.com/jgcasta)
 jgcasta@inspide.com
 
 Juan José Cabrera García
