@@ -39,6 +39,7 @@ $ xml2json camaras.xml camaras.json
 ```
 
 * Mostrar la ubicación de las cámaras en Leaflet
+![Camaras](mapa.png)
 
 ## Referencias
 * http://www.datex2.eu/
