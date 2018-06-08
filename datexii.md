@@ -28,7 +28,8 @@
 
 * Nos damos de alta en el portal http://www.datex2.eu/
 
-## Parseado
+## Práctica
+![Dioagrama](taller.png)
 
 * Obtener los datos de las cámaras de tráfico desde el portal estadístico de DGT - http://www.dgt.es
 * Parsear los datos a un GeoJSON
