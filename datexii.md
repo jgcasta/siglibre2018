@@ -19,8 +19,6 @@ jjcabrera@inspide.com
 
 ## Introducción
 
-* Etherpad compoartido https://bit.ly/2HuLKZS
-
 * Condolencias a los que tengáis que utilizar este esquema
 * DATEX se concibió como un estandar de intercambio de datos entre organismos de tráfico.
 * Actualmente se encuentra la especificación DATEXII que es una extensión para permitir el intercambio con organizaciones privadas
